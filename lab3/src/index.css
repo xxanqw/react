@@ -1,0 +1,77 @@
+:root {
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  
+  --nova-red: #e52d2d;
+  --nova-dark: #213547;
+  --nova-gray: #f7f7f7;
+  --nova-border: #e8e8e8;
+  --nova-hover: #cc1818;
+  
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: 400;
+  color: var(--nova-dark);
+  background-color: var(--nova-gray);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--nova-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  color: var(--nova-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button {
+  border-radius: 4px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-family);
+  background-color: var(--nova-red);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: var(--nova-hover);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(229, 45, 45, 0.3);
+  outline-offset: 2px;
+}
